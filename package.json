@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "scripts": {
+    "start": "node dist/server.js",         // Run the compiled JS file
+    "build": "tsc",                       // Compile TypeScript to JavaScript
+    "dev": "ts-node src/index.ts",        // Run TypeScript directly (for development)
+    "watch": "tsc --watch",               // Watch and compile files on changes
+    "clean": "rm -rf dist"                // Remove the dist folder (Linux/MacOS)
+  }
+}
